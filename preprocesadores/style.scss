@@ -1,85 +1,85 @@
-.body {
+* {
 	margin: 0;
 	padding: 0;
-}
-
-.social {
-	padding: 15px 36px;
-	margin:  0 auto;
-	position: relative;
+	box-sizing: border-box;
 }
 
 .footer {
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	margin: 15px 0px;
 	padding: 0px 0px 0px 4px;
 	background: rgb(104, 77, 77);
 	transition: all 0.3s ease 0s;
+	position: relative;
 
-&__container {
-	display: flex;
-	margin-right: 50px;
-}
+	&__container {
+		display: flex;
+	}
 
-&__enlace {
-	list-style: none;
-	display: inline-block;
-	padding: 20px 10px;
-}
+	&__enlace {
+		list-style: none;
+		display: inline-block;
+		padding: 20px 10px;
+	}
 
-&__bar {
-	display: flex;
-	padding: 8px 0px 0px;
-	margin: 0px 50px 0px 0px;
-}
+	&__bar {
+		display: flex;
+		padding: 8px 0px 0px;
+		margin: 0px 50px 0px 0px;
+	}
 
-&__logo {
-	cursor: pointer;
-}
+	&__logo {
+		cursor: pointer;
+	}
 
-&__list {
-	padding-top: 0px 0px 0px 10px;
-}
+	&__list {
+		padding-top: 0px 0px 0px 10px;
+	}
 
-&__item {
-	list-style: none;
-	display: inline-block;
-	padding: 8px;
-}
+	&__item {
+		list-style: none;
+		display: inline-block;
+		padding: 8px;
+	}
 
-&__link {
-	font-family: "Gill Sans";
-	font-weight: 500;
-	font-size: 16px;
-	color: #faf4f4ee;
-	text-decoration: none;
-}
+	&__link {
+		font-family: "Gill Sans";
+		font-weight: 500;
+		font-size: 16px;
+		color: #faf4f4ee;
+		text-decoration: none;
+	}
 
-&__title {
-	color:#faf4f4ee;
-	font: 14px;
-}
+	&__title {
+		color: #faf4f4ee;
+		font: 14px;
+	}
 
-&__icon {
-	color: aliceblue;
-	height: 20px;
-}
+	&__icon {
+		color: aliceblue;
+		height: 20px;
+	}
 
 }
 
 .arrow {
-	width: 25px;
-	background:#ffffff;
-	color: inherit;
-	pointer-events: all;
 	padding: 16px;
+	border-radius: 50%;
+	background: #ffffff;
+	cursor: pointer;
 	box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%),
-	0 8px 8px 0 rgb(0 0 0 / 24%);
-	right: 25px;
-	top: 25px;
-	z-index: 1;
+		0 8px 8px 0 rgb(0 0 0 / 24%);
+	right: 16px;
+	top: 0px;
+	transform: translateY(-50%);
 	position: absolute;
-}
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
+	&__icon {
+		width: 24px;
+		height: 24px;
+	}
+}
